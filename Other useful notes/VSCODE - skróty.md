@@ -1,0 +1,3 @@
+- CTRL+d  na zaznaczonym tekście i można podmieniać text
+- shift alt - zaznaczanie w pionie
+- ctrl + space - import

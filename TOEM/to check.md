@@ -1,0 +1,8 @@
+ - CHECK TRELLO
+ - 
+ - 
+ - 
+ - 
+ - 
+ - 
+ - If there are any words in list, please add them to trello

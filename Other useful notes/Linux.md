@@ -1,0 +1,4 @@
+- wget *path* - pobieranie pliku
+- unzip plik.zip - unzip pliku
+- zip -r nazwa paczki *   - zapis do zip
+- less nazwa zipa - podglądanie zawartości

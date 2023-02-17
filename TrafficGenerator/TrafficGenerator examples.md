@@ -1,0 +1,44 @@
+## **Bold** __Bold__ 
+Referenced to [[Traffic generator]]
+#udpBigPacketMaxThroughputG3
+	- #testMaxThroughputAndLatency 
+	- #testMaxThroughputAndLatency 
+		- configureDutAndInitTG - ustawia mosy (router z tg, ethmo)
+		- #testMinimumThroughput returns searchResults
+			- #sendPacketsContinously - 15s
+				- collect statistics throughput
+				- stop packets
+				- collect packet statistics
+			- #printNodeCounters 
+			- get throughput #UPLINK  - UL
+			- get throughput #DOWNLINK - DL
+			- if traffic generator hasn't lost packets:
+				- minThroughputs put {allstreamsparams.get(Downlink), throughput DL}
+				- minThroughputs put {{allstreamsparams.get(UPlink), throughput UL}
+			- searchResults = return minThroughputs
+		- searchResultsFromMinimum = searchResults
+		- #findMaxThroughput - przyjmuje min results 
+			-  calculations = minresults - downlink - throughputL2 + maxthroughputPrecision #TODO sprawdzić wartości przed i po
+			- searchResultValues = #searchMaxThroughput 
+				- minStep = minStepMbit #todo
+				- searchThroughputDlValue
+					- if iter == 1 initValue -  #TODO
+					- else:  (maxValMbit - minValMbit / 2) + minValMbit #TODO
+				- createAllInnerInterfaceCounters
+				- printNodeCounters
+				- calculateAndSetTgTrafficRate
+				- #sendTraffic
+					- #runBidirectionalTraffic
+				- searchResults = tg.GetTerminationThroughputStatistics
+				- searchMinValue = searchThrouhtputDlValue  
+				- searchMaxValue jeśli traffic się uda to bez zmian, jeśli nie to searchThroughputDlValue
+				- IF (searchMaxValuse - searchMinValue) < minStep  = searching false
+					- else searching = true 
+					- iter ++
+				- return searchResults
+			- IF searchResultValues == FALSE - return min results
+			- ELSE 
+				- throughputDL = searchResultValue.get allstreamParams.Get(Downlink) MAX!!!!
+				- throughputUL = searchResultValue.get allstreamsParams.get(uplinlk) MAX!!!
+		- c
+	- d
