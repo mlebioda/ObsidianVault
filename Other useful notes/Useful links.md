@@ -9,3 +9,7 @@
 [https://wiki.lmera.ericsson.se/wiki/TN/TN_Tracing](https://wiki.lmera.ericsson.se/wiki/TN/TN_Tracing)
 
 [https://wiki.lmera.ericsson.se/wiki/TN/How_to_create_patch](https://wiki.lmera.ericsson.se/wiki/TN/How_to_create_patch)
+
+[https://wiki.lmera.ericsson.se/wiki/TN/Rules_for_tagging_TN_deliveries](https://wiki.lmera.ericsson.se/wiki/TN/Rules_for_tagging_TN_deliveries)
+
+
